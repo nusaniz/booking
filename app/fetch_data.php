@@ -1,12 +1,15 @@
 <?php
+
+require "../conf/db_connection.php";
+
 // Koneksi ke database
-$servername = "localhost";
-$username = "root"; // Ganti dengan username MySQL Anda
-$password = ""; // Ganti dengan password MySQL Anda
-$database = "db_booking"; // Ganti dengan name database Anda
+// $servername = "localhost";
+// $username = "root"; // Ganti dengan username MySQL Anda
+// $password = ""; // Ganti dengan password MySQL Anda
+// $database = "db_booking"; // Ganti dengan name database Anda
 
 // Membuat koneksi
-$conn = new mysqli($servername, $username, $password, $database);
+// $conn = new mysqli($servername, $username, $password, $database);
 
 // Memeriksa koneksi
 if ($conn->connect_error) {
@@ -66,7 +69,7 @@ if ($result->num_rows > 0) {
         echo "<td>" . $row["tanggal_penjemputan"] . "</td>";
         echo "<td>" . $row["email"] . "</td>";
         echo "<td>" . $row["status"] . "</td>";
-        echo "<td> <a href='approve_booking.php?id=" . $row["id"] . "' class='btn btn-success btn-sm'>Setuju</a> | <a href='reject_booking.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm'>Tolak</a> | <a href='pending_booking.php?id=" . $row["id"] . "' class='btn btn-warning btn-sm'>Pending</a> | <a href='delete_booking.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm'>Hapus</a></td>";
+        echo "<td> <a href='approve_booking.php?id=" . $row["id"] . "' class='btn btn-success btn-sm'>Setuju</a> | <a href='reject_booking.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm'>Tolak</a> | <a href='pending_booking.php?id=" . $row["id"] . "' class='btn btn-warning btn-sm'>Pending</a> | <a href='delete_booking.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm'>Hapus</a> | <a href='index.php?page=edit_booking&&id=" . $row["id"] . "' class='btn btn-primary btn-sm'> Edit</a></td>";
         echo "</tr>";
     }
 } else {

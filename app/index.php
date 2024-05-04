@@ -58,6 +58,7 @@ if (!isset($_SESSION['username'])) {
     <a href="index.php?page=admin">Data</a>
     <a href="index.php?page=booking">Booking</a>
     <a href="index.php?page=cek_booking">Cek Booking</a>
+    <!-- <a href="index.php?page=edit_booking">Cek Booking</a> -->
     <a href="index.php?page=mail">Mail Setup</a>
     <a href="../login/logout.php">Logout</a>
     
@@ -66,7 +67,7 @@ if (!isset($_SESSION['username'])) {
 <div class="content">
     <?php
     // Mengecek apakah parameter page telah diberikan dan valid
-    if (isset($_GET['page']) && in_array($_GET['page'], ['admin', 'booking', 'cek_booking', 'mail'])) {
+    if (isset($_GET['page']) && in_array($_GET['page'], ['admin', 'booking', 'cek_booking', 'edit_booking', 'mail'])) {
         $page = $_GET['page'];
         include "$page.php"; // Menampilkan halaman yang sesuai dengan parameter page
     } else {

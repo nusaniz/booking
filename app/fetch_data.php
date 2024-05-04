@@ -66,7 +66,7 @@ if ($result->num_rows > 0) {
         echo "<td>" . $row["tanggal_penjemputan"] . "</td>";
         echo "<td>" . $row["email"] . "</td>";
         echo "<td>" . $row["status"] . "</td>";
-        echo "<td> <a href='approve_booking.php?id=" . $row["id"] . "' class='btn btn-success btn-sm'>Setuju</a> | <a href='reject_booking.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm'>Tolak</a> | <a href='pending_booking.php?id=" . $row["id"] . "' class='btn btn-warning btn-sm'>Pending</a></td>";
+        echo "<td> <a href='approve_booking.php?id=" . $row["id"] . "' class='btn btn-success btn-sm'>Setuju</a> | <a href='reject_booking.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm'>Tolak</a> | <a href='pending_booking.php?id=" . $row["id"] . "' class='btn btn-warning btn-sm'>Pending</a> | <a href='delete_booking.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm'>Hapus</a></td>";
         echo "</tr>";
     }
 } else {

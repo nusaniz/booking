@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Bulan Mei 2024 pada 16.00
+-- Waktu pembuatan: 05 Bulan Mei 2024 pada 09.10
 -- Versi server: 10.4.25-MariaDB
 -- Versi PHP: 8.1.10
 
@@ -61,10 +61,9 @@ CREATE TABLE `bookings` (
 --
 
 INSERT INTO `bookings` (`id`, `nama`, `alamat`, `tanggal_penjemputan`, `status`, `kode_booking`, `email`) VALUES
-(1, 'Nama 1', 'Alamat 1', '2024-05-03', 'Disetujui', 'KB001', 'tagar60384@lewenbo.com'),
-(2, 'Nama 2', 'Alamat 2', '2024-05-04', 'Ditolak', 'KB002', 'tagar60384@lewenbo.com'),
-(3, 'Nama 3', 'Alamat 3', '2024-05-05', 'Disetujui', 'KB003', 'tagar60384@lewenbo.com'),
-(4, 'Nama 4', 'Alamat 4', '2024-05-06', 'Disetujui', 'KB004', 'tagar60384@lewenbo.com'),
+(2, 'Nama 2', 'Alamat 2 uas', '2024-05-04', 'Disetujui', 'KB002', 'javuxily@pelagius.net'),
+(3, 'Nama 3', 'Alamat 34sad', '2024-05-05', 'Disetujui', 'KB003', 'sadasd@lewsadenbo.com'),
+(4, 'Nama 4', 'Alamat 4sd', '2024-05-06', 'Disetujui', 'KB004', 'tagar60384@lewenbo.com'),
 (5, 'Nama 5', 'Alamat 5', '2024-05-07', 'Ditolak', 'KB005', 'tagar60384@lewenbo.com'),
 (6, 'Nama 6', 'Alamat 6', '2024-05-08', 'Disetujui', 'KB006', 'tagar60384@lewenbo.com'),
 (7, 'Nama 7', 'Alamat 7', '2024-05-09', 'Menunggu Persetujuan', 'KB007', 'tagar60384@lewenbo.com'),
@@ -122,8 +121,11 @@ INSERT INTO `bookings` (`id`, `nama`, `alamat`, `tanggal_penjemputan`, `status`,
 (214, 'indah', 'amerika', '2024-05-22', 'Menunggu Persetujuan', '1DPDJ8T3', 'jelizibo@citmo.net'),
 (215, 'indah', 'amerika', '2024-05-30', 'Menunggu Persetujuan', 'AKFOX00K', 'fehibi5026@togito.com'),
 (216, 'indah', 'amerika', '0000-00-00', 'Disetujui', '60XPDOHV', 'fehibi5026@togito.com'),
-(217, 'indah', 'amerika', '0000-00-00', 'Ditolak', 'U3VOF1TS', ''),
-(218, 'indah', 'amerika', '2024-05-03', 'Menunggu Persetujuan', '29K7YE7U', '');
+(218, 'indah', 'amerika', '2024-05-03', 'Menunggu Persetujuan', '29K7YE7U', ''),
+(219, 'indah', 'amerika', '2024-05-23', 'Menunggu Persetujuan', 'NRHZTQ78', 'tagar60384@lewenbo.com'),
+(220, 'indah', 'amerika', '0000-00-00', 'Disetujui', 'DKWNS02J', ''),
+(221, 'indah', 'amerika', '0000-00-00', 'Disetujui', 'ALSIIMQ1', 'tagar60384@lewenbo.com'),
+(222, 'ANAIA', 'amerika', '0000-00-00', 'Disetujui', 'G8BFKDUM', 'javuxily@pelagius.net');
 
 -- --------------------------------------------------------
 
@@ -345,7 +347,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT untuk tabel `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=219;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=223;
 
 --
 -- AUTO_INCREMENT untuk tabel `kontak`

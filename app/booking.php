@@ -74,7 +74,7 @@ if (!isset($_SESSION['username'])) {
                 <input type="text" class="form-control" id="email" name="email" value="">
             </div>
             <div class="form-group">
-                <label for="tanggal_penjemputan">Nama</label>
+                <label for="tanggal_penjemputan">Tanggal Penjemputan</label>
                 <input type="date" class="form-control" id="tanggal_penjemputan" name="tanggal_penjemputan" value="">
             </div>
             <button type="submit" name="submit" class="btn btn-primary"><i class="fa-regular fa-floppy-disk"></i> Booking</button>
